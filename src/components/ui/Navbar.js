@@ -3,49 +3,47 @@ import { Link, NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-            <Link 
-                className="navbar-brand" 
-                to="/"
-            >
-                Asociaciones
-            </Link>
-
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/marvel"
-                    >
-                        Marvel
-                    </NavLink>
-
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/dc"
-                    >
-                        DC
-                    </NavLink>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <Link
+                    className="navbar-brand"
+                    to="/"
+                >
+                    Asociaciones
+                </Link>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <NavLink
+                            activeClassName="active"
+                            className="nav-item nav-link"
+                            exact
+                            to="/marvel"
+                        >
+                            Marvel
+                        </NavLink>
+                        <NavLink
+                            activeClassName="active"
+                            className="nav-item nav-link"
+                            exact
+                            to="/dc"
+                        >
+                            DC
+                        </NavLink>
+                    </div>
+                    <form class="d-flex">
+                        <NavLink
+                            activeClassName="active"
+                            className="nav-item nav-link"
+                            exact
+                            to="/login"
+                        >
+                            Logout
+                        </NavLink>
+                    </form>
                 </div>
-            </div>
-
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/login"
-                    >
-                        Logout
-                    </NavLink>
-                </ul>
             </div>
         </nav>
     )

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const HeroCard = ({
-id, superhero, publisher, alter_ego, first_appearance, characters 
+    id, superhero, publisher, alter_ego, first_appearance, characters
 }) => {
     return (
         <div className="card mb-3">
@@ -19,7 +19,7 @@ id, superhero, publisher, alter_ego, first_appearance, characters
                         }</p>
                         <p className="card-text"><small className="text-muted">{first_appearance}</small></p>
                         <Link to={`./hero/${id}`}>
-                        Más
+                            Más
                         </Link>
                     </div>
                 </div>

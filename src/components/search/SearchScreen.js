@@ -45,7 +45,7 @@ export const SearchScreen = ({ history }) => {
                             placeholder="Find your hero"
                             autoComplete="off"
                         />
-                        <div class="d-grid gap-2">
+                        <div className="d-grid gap-2">
                             <button
                                 type="submit"
                                 className="btn btn-outline-success"

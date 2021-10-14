@@ -30,12 +30,6 @@ export const HeroScreen = ({ history }) => {
         characters
     } = heroeInfo;
 
-    console.log(superhero,
-        publisher,
-        alter_ego,
-        first_appearance,
-        characters)
-
     return (
         <div className="container">
             <div className="row">

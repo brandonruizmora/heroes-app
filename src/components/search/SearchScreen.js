@@ -28,11 +28,11 @@ export const SearchScreen = ({ history }) => {
     }
 
     return (
-        <div>
-            <h1>Search Screen</h1>
+        <div className="container">
+            <h1 className="fw-bold text-shadow-white">Search Screen</h1>
             <hr />
             <div className="row">
-                <div className="col-5">
+                <div className="col-12 col-sm-5 bg-white rounded p-5 h-25">
                     <h4>Search Form</h4>
                     <hr />
                     <form onSubmit={handleSubmit}>
@@ -55,8 +55,8 @@ export const SearchScreen = ({ history }) => {
                         </div>
                     </form>
                 </div>
-                <div className="col-7">
-                    <h4>Results</h4>
+                <div className="col-12 col-sm-7">
+                    <h4 className="text-shadow-white">Results</h4>
                     <hr />
                     {
                         (q === '') &&

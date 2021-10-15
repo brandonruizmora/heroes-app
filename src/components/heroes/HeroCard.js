@@ -5,7 +5,7 @@ export const HeroCard = ({
     id, superhero, publisher, alter_ego, first_appearance, characters
 }) => {
     return (
-        <div className="card mb-3">
+        <div className="card m-3">
             <div className="row g-0">
                 <div className="col-md-4">
                     <img src={`./assets/heroes/${id}.jpg`} className="img-fluid rounded-start" alt={id} />

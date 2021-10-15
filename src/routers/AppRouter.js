@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-    BrowserRouter,
+    HashRouter,
     Switch,
 } from 'react-router-dom';
 import { AuthContext } from '../auth/AuthContext';
@@ -14,7 +14,7 @@ export const AppRouter = () => {
     const { user: { logged } } = useContext(AuthContext);
 
     return (
-        <BrowserRouter basename="/heroes-app">
+        <HashRouter>
             <div>
                 <Switch>
                     <PublicRoute
@@ -30,6 +30,6 @@ export const AppRouter = () => {
                     />
                 </Switch>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     )
 }

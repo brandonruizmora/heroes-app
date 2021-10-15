@@ -56,7 +56,7 @@ export const LoginScreen = ({ history }) => {
                             <div className="col-12">
                                 <div className="d-grid gap-1 w-100">
                                     <button
-                                        className="btn btn-primary mt-4"
+                                        className="btn btn-dark mt-4"
                                         onClick={handleLogin}
                                     >Login</button>
 

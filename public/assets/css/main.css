@@ -1,0 +1,9 @@
+body {
+    animation: transitionComic 20s infinite;
+}
+
+@keyframes transitionComic {
+    0% { background-image: url("../comic/comic.jpg"); }
+    50% { background-image: url("../comic/comic2.jpg"); }
+    100% { background-image: url("../comic/comic.jpg"); }
+}

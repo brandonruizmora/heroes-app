@@ -14,7 +14,7 @@ export const AppRouter = () => {
     const { user: { logged } } = useContext(AuthContext);
 
     return (
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/heroes-app">
             <div>
                 <Switch>
                     <PublicRoute

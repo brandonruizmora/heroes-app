@@ -1,9 +1,9 @@
-import '../../setupTests';
+import '../../../setupTests';
 import { shallow, mount } from 'enzyme';
-import { Navbar } from '../../components/ui/Navbar';
-import { AuthContext } from '../../auth/AuthContext';
+import { Navbar } from '../../../components/ui/Navbar';
+import { AuthContext } from '../../../auth/AuthContext';
 import { MemoryRouter, Router } from 'react-router';
-import { types } from '../../types/types';
+import { types } from '../../../types/types';
 
 describe('Pruebas en <Navbar />', () => {
 

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <LoginScreen /> Debe de mostrarse correctamente 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="fill d-flex align-items-center justify-content-center"
+  >
+    <div
+      className="card w-50 h-50"
+    >
+      <div
+        className="card-header"
+      >
+        <h1>
+          Login Screen
+        </h1>
+      </div>
+      <div
+        className="card-body d-flex align-items-center justify-content-center"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <input
+              autoComplete="off"
+              className="form-control"
+              maxLength="20"
+              name="userName"
+              onChange={[Function]}
+              placeholder="Write an username..."
+              type="text"
+              value=""
+            />
+            <small
+              className="fw-light fst-italic float-end me-1"
+            >
+              0
+               / 20
+            </small>
+          </div>
+          <div
+            className="col-12"
+          >
+            <div
+              className="d-grid gap-1 w-100"
+            >
+              <button
+                className="btn btn-dark mt-4"
+                onClick={[Function]}
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
